@@ -18,15 +18,18 @@
         </b-row>
       </b-col>
       <b-col>
-        <b-button variant="outline-primary">Экспорт</b-button>
+        <DownloadXml :posts="posts" />
       </b-col>
     </b-row>
   </b-container>
 </template>
 
 <script>
+import DownloadXml from './DownloadXml.vue';
+
 export default {
   name: 'ControlBar',
+  components: { DownloadXml },
   data() {
     return {
       selected: this.postsPerPage,
@@ -38,6 +41,7 @@ export default {
     };
   },
   props: {
+    posts: Array,
     postsPerPage: Number,
     postsInfo: String,
     setPostsPerPage: Function,

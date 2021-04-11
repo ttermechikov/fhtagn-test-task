@@ -5,6 +5,7 @@
       <ControlBar
         :postsPerPage="postsPerPage"
         :postsInfo="postsInfo"
+        :posts="postsForRender"
         @setPostsPerPage="setPostsPerPage"
       />
       <Pagination
