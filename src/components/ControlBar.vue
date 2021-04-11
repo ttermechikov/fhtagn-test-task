@@ -1,8 +1,8 @@
 <template>
-  <b-container>
+  <b-container class="control-bar">
     <b-row class="control-bar-row">
       <b-col
-        >Всего: <strong>{{ selected }}</strong>
+        ><strong>{{ postsInfo }}</strong>
       </b-col>
       <b-col>
         <b-row class="control-bar-row">
@@ -39,6 +39,7 @@ export default {
   },
   props: {
     postsPerPage: Number,
+    postsInfo: String,
     setPostsPerPage: Function,
   },
   methods: {
@@ -51,6 +52,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.control-bar {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #aaa;
+}
+
 .control-bar-row {
   align-items: center;
 }
