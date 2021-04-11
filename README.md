@@ -1,24 +1,27 @@
-# fhtagn-test-task
+# Выполнение [тестового задания компании Фхтагн](https://docs.google.com/document/d/1kMcmgg9GkUu9wcDjfyZC3MsJW2G21lzHCuzM8iTPsK0/edit)
 
-## Project setup
+[Ссылка на запущенное приложение](https://fhtagn.surge.sh/)
+
+## Установка зависимостей
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Запустить режим разработки
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Сборка для деплоймента
+
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Линт
+
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
